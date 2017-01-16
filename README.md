@@ -52,3 +52,19 @@ Which part of the existing Stylesheet should be turned into sass? Use a converte
 There is a svg image and a pixel image in the draft. Move both over to the asset pipeline and use
 
 This step should be a git commit!
+
+- We left the mediaquery part in the css. All other Parts are now in the sass file. 
+- We had to import the files in the application.css
+
+#4. Add a header image
+Pick a free image to be the header image of this app. Choose an image that is available in a size of at least 2000px width.
+    
+Create a version with 1000px width and one with 2000px width
+
+Add them as background images to the header. Use url(<%= asset_path 'header.jpg' %>) in the css or sass file.
+
+#5. 
+
+
+    
+

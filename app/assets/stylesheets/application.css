@@ -14,5 +14,5 @@
  *= require_self
  */
 
-@import '_main.sass';
-@import 'style.css';
+require_tree
+require_self
