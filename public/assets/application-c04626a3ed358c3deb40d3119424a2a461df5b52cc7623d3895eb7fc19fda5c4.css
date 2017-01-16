@@ -1,0 +1,174 @@
+/* line 1, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+body {
+  font-family: Helvetica;
+  background-color: #DDD;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* line 17, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+header {
+  height: 80px;
+  background-image: url(/assets/food_1000-c75a17c7b42ec0af252db25c0b3c73989987946f99b7f14b6338145207c94b1c.jpg);
+}
+
+/* line 21, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+section {
+  flex: 1;
+  background-color: white;
+}
+
+/* line 25, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+footer {
+  height: 70px;
+  background-color: #8DC63F;
+  text-align: center;
+}
+
+/* line 30, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+header img {
+  height: 70px;
+  width: auto;
+}
+
+/* line 34, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+nav {
+  background-color: white;
+}
+/* line 37, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+nav ul li {
+  font-size: 20px;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #754d29;
+}
+/* line 43, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+nav ul a {
+  text-decoration: none;
+  color: white;
+  width: 200px;
+}
+
+/* line 48, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 52, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+.link {
+  width: 200px;
+  border: 1px solid;
+}
+
+/* line 56, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 60, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* line 65, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+p {
+  margin-bottom: 20px;
+}
+
+/* line 68, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+article {
+  background-color: white;
+  padding: 20px;
+}
+
+/* line 72, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+#recipeImage {
+  width: 200px;
+  height: 180px;
+  float: right;
+  margin-top: -80px;
+}
+
+/* line 79, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+#createForm label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 83, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+#createForm label:first-child {
+  margin-top: 20px;
+}
+/* line 85, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+#createForm input {
+  margin-left: 10px;
+}
+
+/* line 88, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+select {
+  margin-left: 10px;
+}
+
+/* line 91, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+#adminList form {
+  display: inline;
+}
+
+/* line 94, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+#zubereitung {
+  margin-top: 50px;
+}
+
+/* line 97, /Users/theresahock/Documents/hoeck_backend/rails-example-recipes/app/assets/stylesheets/_main.sass.erb */
+#zutaten {
+  margin-top: 40px;
+}
+@media screen and (min-width: 1000px) {
+    body { width: 1000px; margin: 0 auto;}
+    header {
+        background-image: url(/assets/food_2000-0b36a44f17ead62ef349777f86b81f576218448c672956e79dacd5ccfea2e194.jpg);
+    }
+    section { display: flex; flex-direction: row; }
+    article { flex: 5; }
+    nav { flex: 2; }
+
+    nav ul li {
+        padding: 15px;
+    } 
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+require_tree
+require_self
