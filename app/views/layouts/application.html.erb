@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rezepte</title>
+  <meta charset="UTF-8">
+  <title>Cookin on Rails - Index</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<header>
+  <h1><a href="/"><img src="<%= image_url("logo.svg")%>">Cookin' on Rails</a></h1>
+</header>
+<section>
+  <nav>
+    <ul  class="navigation">
+      <li><%= link_to_unless_current "Home", root_path %></li>
+      <li><%= link_to_unless_current "All Recipes", recipes_path%></li>
+      <li><%= link_to_unless_current "Search Recipe", search_recipes_path%></li>
+      <li><%= link_to_unless_current "New Recipe", new_recipe_path%></li>
+    </ul>
+  </nav>
+  <article>
+    <%= yield %>
+  </article>
+</section>
 
 </body>
 </html>

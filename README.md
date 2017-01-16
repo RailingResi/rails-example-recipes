@@ -15,3 +15,23 @@ or at http://localhost:3000/todo.html
 
 There is a [demo site](https://frozen-oasis-65001.herokuapp.com/) of
 the solution on heroku
+
+TODO:
+
+#1.Load seed data
+
+What is seed data? Where is the actual file located? And what was that rake task to load it?
+
+Seed data is a file to feed the database with default values.
+The file is located in db/seeds.rb.
+The Rake task: rails db:seed
+
+#2.Create HTML
+Study the draft: which parts of the html go into the layout? the view? a partial? Study the layout that's already there: which parts do you need to preserve?
+
+Don't forget to replace the links with link_to - or better yet link_to_unless_current
+
+This step should be a git commit!
+
+
+
