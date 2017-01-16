@@ -18,7 +18,7 @@ the solution on heroku
 
 TODO:
 
-#1.Load seed data
+#1. Load seed data
 
 What is seed data? Where is the actual file located? And what was that rake task to load it?
 
@@ -26,7 +26,7 @@ Seed data is a file to feed the database with default values.
 The file is located in db/seeds.rb.
 The Rake task: rails db:seed
 
-#2.Create HTML
+#2. Create HTML
 Study the draft: which parts of the html go into the layout? the view? a partial? Study the layout that's already there: which parts do you need to preserve?
 
 Don't forget to replace the links with link_to - or better yet link_to_unless_current
@@ -63,8 +63,23 @@ Create a version with 1000px width and one with 2000px width
 
 Add them as background images to the header. Use url(<%= asset_path 'header.jpg' %>) in the css or sass file.
 
-#5. 
+#5. Assets in production 
+    //precompile assetfiles
+    $ rake assets:precompile
+    
+    //deploy on heroku
+    $ git push heroku master
+    
+    //db migrate
+    $ heroku run rake db:migrate
+    
+    //db add data
+    $ heroku run rake db:seed
+  
 
+#Deployed on Heroku
+
+https://foodrecipedathe.herokuapp.com/
 
     
 
